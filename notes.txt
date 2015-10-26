@@ -32,3 +32,5 @@ Ideas of things to examine:
 1) Average TOI versus a player's CF% (in relation to team Corsi)--this answers the question of whether the strongest advanced stats players are the ones getting the most (5-on-5) ice time. (Graph TOI as bars from first to last, overlay second graph with horizontal line at team Corsi average with individual player data points above and below the line.)
 
 2) Look at who raises their game in "clutch" (Corsi Close) situations?
+
+3) Straight graph of CF%RelTM (Corsi Percentage Relative Teammates during 5-on-5 and during special team situations)

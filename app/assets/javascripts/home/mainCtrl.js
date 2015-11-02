@@ -2,6 +2,13 @@ angular.module('hockeyStats')
   .controller('MainCtrl', [
     '$scope',
     function($scope){
+
+      // $scope.selectedTeam = {
+      //     Current: "Chicago"
+      // };
+
+      console.log($scope.selectedTeam);
+
       $scope.salesData = [
         {hour: 1,sales: 54},
         {hour: 2,sales: 66},
@@ -14,76 +21,10 @@ angular.module('hockeyStats')
         {hour: 9,sales: 55},
         {hour: 10,sales: 30}
       ];
+      $scope.teamsData =
+
+
+[{"id":1,"name":"NY Islanders","cfpercentage":52,"created_at":"2015-10-29T15:11:48.731Z","updated_at":"2015-10-29T15:11:48.731Z","players":[]},{"id":2,"name":"Chicago","cfpercentage":53,"created_at":"2015-10-29T15:11:48.736Z","updated_at":"2015-10-29T15:11:48.736Z","players":[{"id":1,"name":"Joakim Nordstrom","toi":22985,"cfpercentage":49,"team_id":2,"created_at":"2015-10-29T15:11:48.839Z","updated_at":"2015-10-29T15:11:48.839Z"},{"id":2,"name":"Dan Carcillo","toi":19051,"cfpercentage":49,"team_id":2,"created_at":"2015-10-29T15:11:48.844Z","updated_at":"2015-10-29T15:11:48.844Z"},{"id":3,"name":"Kyle Cumiskey","toi":5073,"cfpercentage":52,"team_id":2,"created_at":"2015-10-29T15:11:48.848Z","updated_at":"2015-10-29T15:11:48.848Z"},{"id":4,"name":"Andrew Desjardins","toi":38885,"cfpercentage":46,"team_id":2,"created_at":"2015-10-29T15:11:48.852Z","updated_at":"2015-10-29T15:11:48.852Z"},{"id":5,"name":"Duncan Keith","toi":88541,"cfpercentage":55,"team_id":2,"created_at":"2015-10-29T15:11:48.857Z","updated_at":"2015-10-29T15:11:48.857Z"},{"id":6,"name":"Teuvo Teravainen","toi":23726,"cfpercentage":54,"team_id":2,"created_at":"2015-10-29T15:11:48.861Z","updated_at":"2015-10-29T15:11:48.861Z"},{"id":7,"name":"Marian Hossa","toi":67188,"cfpercentage":55,"team_id":2,"created_at":"2015-10-29T15:11:48.865Z","updated_at":"2015-10-29T15:11:48.865Z"},{"id":8,"name":"Marcus Kruger","toi":51223,"cfpercentage":52,"team_id":2,"created_at":"2015-10-29T15:11:48.869Z","updated_at":"2015-10-29T15:11:48.869Z"},{"id":9,"name":"Brad Richards","toi":57224,"cfpercentage":54,"team_id":2,"created_at":"2015-10-29T15:11:48.873Z","updated_at":"2015-10-29T15:11:48.873Z"},{"id":10,"name":"Michal Rozsival","toi":60216,"cfpercentage":53,"team_id":2,"created_at":"2015-10-29T15:11:48.877Z","updated_at":"2015-10-29T15:11:48.877Z"},{"id":11,"name":"Kris Versteeg","toi":49215,"cfpercentage":54,"team_id":2,"created_at":"2015-10-29T15:11:48.881Z","updated_at":"2015-10-29T15:11:48.881Z"},{"id":12,"name":"Brandon Saad","toi":65375,"cfpercentage":53,"team_id":2,"created_at":"2015-10-29T15:11:48.885Z","updated_at":"2015-10-29T15:11:48.885Z"},{"id":13,"name":"Kimmo Timonen","toi":10751,"cfpercentage":44,"team_id":2,"created_at":"2015-10-29T15:11:48.889Z","updated_at":"2015-10-29T15:11:48.889Z"},{"id":14,"name":"David Rundblad","toi":34871,"cfpercentage":57,"team_id":2,"created_at":"2015-10-29T15:11:48.894Z","updated_at":"2015-10-29T15:11:48.894Z"},{"id":15,"name":"Antoine Vermette","toi":65744,"cfpercentage":47,"team_id":2,"created_at":"2015-10-29T15:11:48.898Z","updated_at":"2015-10-29T15:11:48.898Z"},{"id":16,"name":"Johnny Oduya","toi":80607,"cfpercentage":51,"team_id":2,"created_at":"2015-10-29T15:11:48.902Z","updated_at":"2015-10-29T15:11:48.902Z"},{"id":17,"name":"Andrew Shaw","toi":54655,"cfpercentage":53,"team_id":2,"created_at":"2015-10-29T15:11:48.906Z","updated_at":"2015-10-29T15:11:48.906Z"},{"id":18,"name":"Trevor Van_riemsdyk","toi":13710,"cfpercentage":60,"team_id":2,"created_at":"2015-10-29T15:11:48.909Z","updated_at":"2015-10-29T15:11:48.909Z"},{"id":19,"name":"Patrick Kane","toi":54510,"cfpercentage":53,"team_id":2,"created_at":"2015-10-29T15:11:48.912Z","updated_at":"2015-10-29T15:11:48.912Z"},{"id":20,"name":"Patrick Sharp","toi":53703,"cfpercentage":55,"team_id":2,"created_at":"2015-10-29T15:11:48.915Z","updated_at":"2015-10-29T15:11:48.915Z"},{"id":21,"name":"Niklas Hjalmarsson","toi":90920,"cfpercentage":53,"team_id":2,"created_at":"2015-10-29T15:11:48.919Z","updated_at":"2015-10-29T15:11:48.919Z"},{"id":22,"name":"Bryan Bickell","toi":53644,"cfpercentage":54,"team_id":2,"created_at":"2015-10-29T15:11:48.923Z","updated_at":"2015-10-29T15:11:48.923Z"},{"id":23,"name":"Brent Seabrook","toi":82456,"cfpercentage":52,"team_id":2,"created_at":"2015-10-29T15:11:48.927Z","updated_at":"2015-10-29T15:11:48.927Z"},{"id":24,"name":"Jonathan Toews","toi":66842,"cfpercentage":55,"team_id":2,"created_at":"2015-10-29T15:11:48.932Z","updated_at":"2015-10-29T15:11:48.932Z"}]},{"id":3,"name":"Dallas","cfpercentage":52,"created_at":"2015-10-29T15:11:48.738Z","updated_at":"2015-10-29T15:11:48.738Z","players":[]},{"id":4,"name":"San Jose","cfpercentage":51,"created_at":"2015-10-29T15:11:48.740Z","updated_at":"2015-10-29T15:11:48.740Z","players":[]},{"id":5,"name":"Los Angeles","cfpercentage":55,"created_at":"2015-10-29T15:11:48.742Z","updated_at":"2015-10-29T15:11:48.742Z","players":[]},{"id":6,"name":"Carolina","cfpercentage":52,"created_at":"2015-10-29T15:11:48.744Z","updated_at":"2015-10-29T15:11:48.744Z","players":[]},{"id":7,"name":"Nashville","cfpercentage":52,"created_at":"2015-10-29T15:11:48.747Z","updated_at":"2015-10-29T15:11:48.747Z","players":[]},{"id":8,"name":"Boston","cfpercentage":51,"created_at":"2015-10-29T15:11:48.750Z","updated_at":"2015-10-29T15:11:48.750Z","players":[]},{"id":9,"name":"NY Rangers","cfpercentage":49,"created_at":"2015-10-29T15:11:48.753Z","updated_at":"2015-10-29T15:11:48.753Z","players":[]},{"id":10,"name":"Washington","cfpercentage":51,"created_at":"2015-10-29T15:11:48.756Z","updated_at":"2015-10-29T15:11:48.756Z","players":[]},{"id":11,"name":"Arizona","cfpercentage":48,"created_at":"2015-10-29T15:11:48.758Z","updated_at":"2015-10-29T15:11:48.758Z","players":[]},{"id":12,"name":"Anaheim","cfpercentage":51,"created_at":"2015-10-29T15:11:48.761Z","updated_at":"2015-10-29T15:11:48.761Z","players":[]},{"id":13,"name":"St. Louis","cfpercentage":51,"created_at":"2015-10-29T15:11:48.763Z","updated_at":"2015-10-29T15:11:48.763Z","players":[]},{"id":14,"name":"Pittsburgh","cfpercentage":52,"created_at":"2015-10-29T15:11:48.765Z","updated_at":"2015-10-29T15:11:48.765Z","players":[]},{"id":15,"name":"Ottawa","cfpercentage":50,"created_at":"2015-10-29T15:11:48.767Z","updated_at":"2015-10-29T15:11:48.767Z","players":[]},{"id":16,"name":"Minnesota","cfpercentage":51,"created_at":"2015-10-29T15:11:48.769Z","updated_at":"2015-10-29T15:11:48.769Z","players":[]},{"id":17,"name":"Tampa Bay","cfpercentage":53,"created_at":"2015-10-29T15:11:48.772Z","updated_at":"2015-10-29T15:11:48.772Z","players":[]},{"id":18,"name":"Edmonton","cfpercentage":48,"created_at":"2015-10-29T15:11:48.775Z","updated_at":"2015-10-29T15:11:48.775Z","players":[]},{"id":19,"name":"Montreal","cfpercentage":48,"created_at":"2015-10-29T15:11:48.778Z","updated_at":"2015-10-29T15:11:48.778Z","players":[]},{"id":20,"name":"Florida","cfpercentage":51,"created_at":"2015-10-29T15:11:48.782Z","updated_at":"2015-10-29T15:11:48.782Z","players":[]},{"id":21,"name":"Philadelphia","cfpercentage":49,"created_at":"2015-10-29T15:11:48.785Z","updated_at":"2015-10-29T15:11:48.785Z","players":[]},{"id":22,"name":"Winnipeg","cfpercentage":52,"created_at":"2015-10-29T15:11:48.788Z","updated_at":"2015-10-29T15:11:48.788Z","players":[]},{"id":23,"name":"Vancouver","cfpercentage":49,"created_at":"2015-10-29T15:11:48.791Z","updated_at":"2015-10-29T15:11:48.791Z","players":[]},{"id":24,"name":"Toronto","cfpercentage":46,"created_at":"2015-10-29T15:11:48.795Z","updated_at":"2015-10-29T15:11:48.795Z","players":[]},{"id":25,"name":"Detroit","cfpercentage":53,"created_at":"2015-10-29T15:11:48.798Z","updated_at":"2015-10-29T15:11:48.798Z","players":[]},{"id":26,"name":"Calgary","cfpercentage":44,"created_at":"2015-10-29T15:11:48.801Z","updated_at":"2015-10-29T15:11:48.801Z","players":[]},{"id":27,"name":"Columbus","cfpercentage":47,"created_at":"2015-10-29T15:11:48.805Z","updated_at":"2015-10-29T15:11:48.805Z","players":[]},{"id":28,"name":"Colorado","cfpercentage":43,"created_at":"2015-10-29T15:11:48.809Z","updated_at":"2015-10-29T15:11:48.809Z","players":[]},{"id":29,"name":"New Jersey","cfpercentage":47,"created_at":"2015-10-29T15:11:48.812Z","updated_at":"2015-10-29T15:11:48.812Z","players":[]},{"id":30,"name":"Buffalo","cfpercentage":37,"created_at":"2015-10-29T15:11:48.816Z","updated_at":"2015-10-29T15:11:48.816Z","players":[]}]
+
     }
   ])
-  .directive("linearChart", function($window) {
-    return{
-      restrict: "EA",
-      template: "<svg width='100%' height='200'></svg>",
-      // template: "<svg width='100%' height='100%'></svg>",
-      link: function(scope, elem, attrs){
-        var salesDataToPlot=scope[attrs.chartData];
-        var padding = 20;
-        var pathClass="path";
-        var xScale, yScale, xAxisGen, yAxisGen, lineFun;
-
-        var d3 = $window.d3;
-        var rawSvg=elem.find('svg');
-        var svg = d3.select(rawSvg[0]);
-
-        function setChartParameters(){
-          xScale = d3.scale.linear()
-                    .domain([salesDataToPlot[0].hour, salesDataToPlot[salesDataToPlot.length - 1].hour])
-                    .range([padding + 5, rawSvg[0].clientWidth - padding]);
-          yScale = d3.scale.linear()
-                    .domain([0, d3.max(salesDataToPlot, function (d) {
-                      return d.sales;
-                    })])
-                    .range([rawSvg.attr("height") - padding, 0]);
-          xAxisGen = d3.svg.axis()
-                      .scale(xScale)
-                      .orient("bottom")
-                      .ticks(salesDataToPlot.length - 1);
-          yAxisGen = d3.svg.axis()
-                      .scale(yScale)
-                      .orient("left")
-                      .ticks(5);
-
-          lineFun = d3.svg.line()
-                      .x(function (d) {
-                        return xScale(d.hour);
-                      })
-                      .y(function (d) {
-                        return yScale(d.sales);
-                      })
-                      .interpolate("basis");
-        }
-
-        function drawLineChart() {
-
-          setChartParameters();
-
-          svg.append("svg:g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0,180)")
-            .call(xAxisGen);
-
-          svg.append("svg:g")
-            .attr("class", "y axis")
-            .attr("transform", "translate(20,0)")
-            .call(yAxisGen);
-
-          svg.append("svg:path")
-            .attr({
-              d: lineFun(salesDataToPlot),
-              "stroke": "blue",
-              "stroke-width": 2,
-              "fill": "none",
-              "class": pathClass
-            });
-        }
-
-        drawLineChart();
-      }
-    }
-  })

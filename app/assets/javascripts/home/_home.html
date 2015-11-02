@@ -1,0 +1,5 @@
+<select ng-init="selectedTeam = teamsData[1]" ng-model="selectedTeam"
+  ng-options="team.name for team in teamsData">
+</select>
+<div linear-chart chart-data="salesData"></div>
+<div id="bar-chart" bar-chart chart-data="selectedTeam"></div>

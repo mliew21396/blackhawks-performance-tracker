@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  toi: 1
+  cfpercentage: 1
+
+two:
+  name: MyString
+  toi: 1
+  cfpercentage: 1
